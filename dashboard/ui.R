@@ -37,17 +37,26 @@ ui <- fluidPage("",
                   
                   h2("Parameter:"),
                   h2("- Temperatur"),
-                  h2("- Wert der Wahrscheinlichkeitsdichtefunktion"),
+                  h2("- Wert der Wahrscheinlichkeitsdichtefunktion (WDF)"),
                   h2("- Anzahl absolvierter Schritte"),
                 )
                 ,
-                verticalTabPanel("Simualted Annealing Parameter Kontext",
+                verticalTabPanel("Simualted Annealing Parameter Temperatur",
                    style = "color:#000;",
-                   h2("Kernkonzept:"),
-                   h2("Parameter Kontext:"),
-                   h2("- Temperatur"),
-                   h2("- Wert der Wahrscheinlichkeitsdichtefunktion"),
-                   h2("- Anzahl absolvierter Schritte"),
+                   h2("Parameter Tenperatur:"),
+                   h2("- zum Start Initalisierung einer hohen Temperatur"),
+                   h2("- Temperatur wird über die Laufzeit inkrementell reduziert"),
+                   h2("- je höher Temperatur, desto länger die Laufzeit des Verfahrens")
+                )
+                ,
+                verticalTabPanel("Simualted Annealing Parameter WDF Wert/Anzahl absolvierter Schritte",
+                   style = "color:#000;",
+                   h2("Parameter WDF Wert:"),
+                   h2("- errechnet sich aus der Temperatur und der WDF Formel"),
+                   h2("- Temperatur wird über die Laufzeit inkrementell reduziert"),
+                   
+                   h2("Parameter Absolvierte Schritte"),
+                   h2("- zum Start Initalisierung einer hohen Temperatur"),
                    h2("- Erlaubt zwischenzeitlich schlechtere Lösungen -> kommt aus lokalem Optimum wieder heraus")
                 )
               ),
