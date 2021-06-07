@@ -1,0 +1,11 @@
+name: dashboard
+title:
+username:
+account: simulatedannealing
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4208802
+bundleId: 4686689
+url: https://simulatedannealing.shinyapps.io/dashboard/
+when: 1623056982.83937
+lastSyncTime: 1623056982.83937

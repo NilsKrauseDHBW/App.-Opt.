@@ -1,0 +1,8 @@
+In der R console
+
+1. install.packages('rsconnect')
+
+2. rsconnect::setAccountInfo(name='simulatedannealing', token='0122588A2B5838A1409DF87C9A1A90E6', secret='bhH8flZArZ/LajzXlfhS8RRdp0fER/4f55ml7qw5')
+
+3. library(rsconnect)
+	rsconnect::deployApp('C:/Users/siggn/Dropbox/simulated annealing/dashboard')
