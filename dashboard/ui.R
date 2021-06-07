@@ -88,21 +88,18 @@ ui <- fluidPage("",
           icon = icon("far fa-image"),
           fluidRow(
             column(
-              12, h1("Graphische Visualisierung"),
+              12, h1("Graphische Visualisierung Berggipfel finden"),
               br(),
               img(src = "Gif_Explain.gif")
             )
           ),
-        ),
-        tabPanel("Weitere Problemstellungen",
-          icon = icon("far fa-plus-square"),
           fluidRow(
             column(
-              12, h1("Funktionsweise des Algorithmus"),
+              12, h1("Graphische Visualisierung Traveling Salesman Problem"),
               br(),
               img(src = "trav_sale.gif")
             )
-          ),
+          )
         )
       )
     ),
