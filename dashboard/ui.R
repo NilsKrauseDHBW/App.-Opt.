@@ -27,13 +27,20 @@ ui <- fluidPage("",
                   h2("- Anwendung in diskreten Suchräumen"),
                   h2("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
                   h2("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
-                  h2("- Beispiel Traveling Salesman-Problem")
+                  h2("- Beispiel dafür Traveling Salesman-Problem")
                   
                 ),
                 verticalTabPanel("Simualted Annealing",
                   style = "color:#000;",
                   h2("- Vom Abkühlprozess in der Natur inspiriert"),
                   h2("- Erlaubt zwischenzeitlich schlechtere Lösungen -> kommt aus lokalem Optimum wieder heraus")
+                )
+              ),
+              fluidRow(
+                column(
+                  12, h1("Workflow Simulated Anneling"),
+                  br(),
+                  img(src = "AppOpt.png")
                 )
               )
             )
