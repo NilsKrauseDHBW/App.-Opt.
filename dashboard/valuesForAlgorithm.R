@@ -6,17 +6,15 @@ y <- 2000
 # c() enables adding the new elements to the list directly
 ylist <- c()
 xlist <- c()
-i <- 0 
+i <- 0
 
-while(i <= count) {
-  
-  y = y + sample(-30:30, 1)
-  
-  i = i + 1 
-  
+while (i <= count) {
+  y <- y + sample(-30:30, 1)
+
+  i <- i + 1
+
   ylist <- c(ylist, y)
   xlist <- c(xlist, i)
-  
 }
 
 ylist
