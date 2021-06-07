@@ -66,9 +66,23 @@ ui <- fluidPage("",
                   br(),
                   img(src = "AppOpt.png")
                 )
+              ),
+              fluidRow(
+                column(
+                  12,
+                  br(),
+                  verticalTabsetPanel(
+                    verticalTabPanel("Wahrscheinlichkeit schlechte Schritte durchzuführen",
+                     style = "color:#000;",
+                     h2("Die Wahrscheinlichkeit schlechte Schritte durchzuführen:"),
+                     h3("- Die Wahrscheinlichkeit schlechte Schritte durchzuführen sinkt stetig gegen Null, wenn die Temperatur reduziert wird. In den Anfangsstadien akzeptiert das Verfahren häufiger schlechtere Schritte, während in den Endstadien die schlechteren Schritte fast immer ablehnt werden."),
+                     h3("- Das hat den Vorteil, dass Anfangs durch die schlechten Schritte sich das Verfahren nicht in einem lokalen Optimum verfängt und ein besseres lokales Optimum findet."),
+                    )
+                  )
+                )
               )
             )
-          ),
+          )
         ),
         tabPanel("Graphische Visualisierung",
           icon = icon("far fa-image"),
