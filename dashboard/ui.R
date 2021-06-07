@@ -25,39 +25,39 @@ ui <- fluidPage("",
                 verticalTabPanel("Heuristik",
                   style = "color:#000;",
                   h2("Kernkonzept:"),
-                  h2("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
-                  h2("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
-                  h2("- Beispiel dafür Traveling Salesman-Problem")
+                  h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
+                  h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
+                  h3("- Beispiel dafür Traveling Salesman-Problem")
                   
                 ),
                 verticalTabPanel("Simualted Annealing und Kernkonzept/Parameter",
                   style = "color:#000;",
                   h2("Kernkonzept:"),
-                  h2("- Heuristisches Verfahren, bei dem das Finden eines ungefähres Optimum in einer festen Zeitspanne steht im Vordergrund "),
-                  
+                  h3("- Heuristisches Verfahren, bei dem das Finden eines ungefähres Optimum in einer festen Zeitspanne steht im Vordergrund "),
+                  h2("---"),
                   h2("Parameter:"),
-                  h2("- Temperatur"),
-                  h2("- Wert der Wahrscheinlichkeitsdichtefunktion (WDF)"),
-                  h2("- Anzahl absolvierter Schritte"),
+                  h3("- Temperatur"),
+                  h3("- Wert der Wahrscheinlichkeitsdichtefunktion (WDF)"),
+                  h3("- Anzahl absolvierter Schritte"),
                 )
                 ,
                 verticalTabPanel("Simualted Annealing Parameter Temperatur",
                    style = "color:#000;",
-                   h2("Parameter Tenperatur:"),
-                   h2("- zum Start Initalisierung einer hohen Temperatur"),
-                   h2("- Temperatur wird über die Laufzeit inkrementell reduziert"),
-                   h2("- je höher Temperatur, desto länger die Laufzeit des Verfahrens")
+                   h2("Temperatur:"),
+                   h3("- zum Start Initalisierung einer hohen Temperatur"),
+                   h3("- Temperatur wird über die Laufzeit inkrementell reduziert"),
+                   h3("- je höher Temperatur, desto länger die Laufzeit des Verfahrens")
                 )
                 ,
                 verticalTabPanel("Simualted Annealing Parameter WDF Wert/Anzahl absolvierter Schritte",
                    style = "color:#000;",
-                   h2("Parameter WDF Wert:"),
-                   h2("- errechnet sich aus der Temperatur und der WDF Formel"),
-                   h2("- Temperatur wird über die Laufzeit inkrementell reduziert"),
-                   
-                   h2("Parameter Absolvierte Schritte"),
-                   h2("- zum Start Initalisierung einer hohen Temperatur"),
-                   h2("- Erlaubt zwischenzeitlich schlechtere Lösungen -> kommt aus lokalem Optimum wieder heraus")
+                   h2("WDF Wert:"),
+                   h3("- errechnet sich aus der Temperatur und der WDF Formel"),
+                   h2("---"),
+                   h2("Absolvierte Schritte:"),
+                   h3("- zum Start Initalisierung mit 0"),
+                   h3("- pro Iteration Wert um +1 erhöht"),
+                   h3("- Erlaubt zwischenzeitlich schlechtere Lösungen -> kommt aus lokalem Optimum wieder heraus")
                 )
               ),
               fluidRow(
