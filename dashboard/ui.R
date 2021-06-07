@@ -24,11 +24,11 @@ ui <- fluidPage("",
               verticalTabsetPanel(
                 verticalTabPanel("Heuristik",
                   style = "color:#000;",
-                  h2("- Ermittlung zulässiger Lösungen von Optmierungsproblemen"),
-                  h2("- Optimierung sucht optimale Lösung"),
-                  h2("- Heuristik sucht ausreichend gute Lösung"),
-                  h2("- Wird eingesetzt wenn Optimierung wegen zu hohem Rechenaufwand scheitert"),
-                  h2("- Bsp. Traveling Salesman-Problem")
+                  h2("- Anwendung in diskreten Suchräumen"),
+                  h2("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
+                  h2("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
+                  h2("- Beispiel Traveling Salesman-Problem")
+                  
                 ),
                 verticalTabPanel("Simualted Annealing",
                   style = "color:#000;",
