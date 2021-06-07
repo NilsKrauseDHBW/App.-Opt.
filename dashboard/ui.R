@@ -24,16 +24,31 @@ ui <- fluidPage("",
               verticalTabsetPanel(
                 verticalTabPanel("Heuristik",
                   style = "color:#000;",
-                  h2("- Anwendung in diskreten Suchräumen"),
+                  h2("Kernkonzept:"),
                   h2("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
                   h2("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
                   h2("- Beispiel dafür Traveling Salesman-Problem")
                   
                 ),
-                verticalTabPanel("Simualted Annealing",
+                verticalTabPanel("Simualted Annealing und Kernkonzept/Parameter",
                   style = "color:#000;",
-                  h2("- Vom Abkühlprozess in der Natur inspiriert"),
-                  h2("- Erlaubt zwischenzeitlich schlechtere Lösungen -> kommt aus lokalem Optimum wieder heraus")
+                  h2("Kernkonzept:"),
+                  h2("- Heuristisches Verfahren, bei dem das Finden eines ungefähres Optimum in einer festen Zeitspanne steht im Vordergrund "),
+                  
+                  h2("Parameter:"),
+                  h2("- Temperatur"),
+                  h2("- Wert der Wahrscheinlichkeitsdichtefunktion"),
+                  h2("- Anzahl absolvierter Schritte"),
+                )
+                ,
+                verticalTabPanel("Simualted Annealing Parameter Kontext",
+                   style = "color:#000;",
+                   h2("Kernkonzept:"),
+                   h2("Parameter Kontext:"),
+                   h2("- Temperatur"),
+                   h2("- Wert der Wahrscheinlichkeitsdichtefunktion"),
+                   h2("- Anzahl absolvierter Schritte"),
+                   h2("- Erlaubt zwischenzeitlich schlechtere Lösungen -> kommt aus lokalem Optimum wieder heraus")
                 )
               ),
               fluidRow(
