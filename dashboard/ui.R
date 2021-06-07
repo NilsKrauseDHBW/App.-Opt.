@@ -15,8 +15,8 @@ ui <- fluidPage("",
       icon = icon("info"),
       tabsetPanel(
         type = c("pills"),
-        tabPanel("Tab 1",
-          icon = icon("signal-slash"),
+        tabPanel("Grundlagen",
+          icon = icon("far fa-play-circle"),
           fluidRow(
             column(
               12,
@@ -39,23 +39,23 @@ ui <- fluidPage("",
             )
           ),
         ),
-        tabPanel("Tab 2",
-          icon = icon("code"),
+        tabPanel("Graphische Visualisierung",
+          icon = icon("far fa-image"),
           fluidRow(
             column(
-              12, h1("Funktionsweise des Algorithmus"),
+              12, h1("Graphische Visualisierung"),
               br(),
-              img(src = "algorithm.png")
+              img(src = "Gif_Explain.gif")
             )
           ),
         ),
-        tabPanel("Tab 3",
-          icon = icon("simplybuilt"),
+        tabPanel("Weitere Problemstellungen",
+          icon = icon("far fa-plus-square"),
           fluidRow(
             column(
               12, h1("Funktionsweise des Algorithmus"),
               br(),
-              img(src = "algorithm.png")
+              img(src = "trav_sale.gif")
             )
           ),
         )
