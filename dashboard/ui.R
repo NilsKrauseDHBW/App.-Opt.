@@ -91,7 +91,7 @@ ui <- fluidPage("",
           )
         ),
         tabPanel("Workflow",
-          icon = icon("far fa-image"),
+          icon = icon("fas fa-angle-double-right"),
           fluidRow(
             column(
               12, h1("Workflow Simulated Anneling"),
