@@ -66,20 +66,25 @@ ui <- fluidPage("",
                 verticalTabPanel("Simualted Annealing Durchführung",
                    style = "color:#000;",
                    h2("Durchführung:"),
-                   h3("- Zu B
-                      eginn wird mit einer hohen Temperatur gestartet, welche sich iterative verkleinert"),
+                   h3("- Zu Beginn wird mit einer hohen Temperatur gestartet, welche sich iterative verkleinert"),
                    h3("- Das wiederum verkleinert den WDF Wert"),
                    h3("- Das in Kombination mit der steigenden Nummer an zufälligen schritten führt dies dazu das Anfangs viele schritte akzeptiert werden, welche schlechter sind als die vorherigen"),
                    h3("- wohingegen zum ende hin wesendlich weniger schlechte Schritte akzeptiert werden"),
-                   h3("- Dieser Abkühlungsprozess, welcher aus der Thermodynamik inspiriert ist, ist namensgebend für das Simualted Anneling"),
+                   h3(""),
               )
+              ,
+              verticalTabPanel("Simualted Annealing Herleitung aus der Natur",
+                   style = "color:#000;",
+                   h2("Herleitung aus der Natur:"),
+                   h3("- Dieser Abkühlungsprozess, welcher aus der Thermodynamik inspiriert ist, ist namensgebend für das Simualted Anneling"),
+                   )
               ,
               verticalTabPanel("Wahrscheinlichkeit schlechte Schritte durchzuführen",
                    style = "color:#000;",
                    h2("Die Wahrscheinlichkeit schlechte Schritte durchzuführen:"),
                    h3("- Die Wahrscheinlichkeit schlechte Schritte durchzuführen sinkt stetig gegen Null, wenn die Temperatur reduziert wird. In den Anfangsstadien akzeptiert das Verfahren häufiger schlechtere Schritte, während in den Endstadien die schlechteren Schritte fast immer ablehnt werden."),
                    h3("- Das hat den Vorteil, dass Anfangs durch die schlechten Schritte sich das Verfahren nicht in einem lokalen Optimum verfängt und ein besseres lokales Optimum findet."),
-                   )
+                )
               )
             )
           )
