@@ -62,7 +62,16 @@ ui <- fluidPage("",
                    h3("- zum Start Initalisierung mit 0"),
                    h3("- pro Iteration Wert um +1 erhöht"),
                 )
-              ),
+                ,
+                verticalTabPanel("Simualted Annealing Durchführung",
+                   style = "color:#000;",
+                   h2("Durchführung:"),
+                   h3("- Zu Beginn wird mit einer hohen Temperatur gestartet, welche sich iterative verkleinert"),
+                   h3("- Das wiederum verkleinert den WDF Wert"),
+                   h3("- Das in Kombination mit der steigenden Nummer an zufälligen schritten führt dies dazu das Anfangs viele schritte akzeptiert werden, welche schlechter sind als die vorherigen"),
+                   h3("- wohingegen zum ende hin wesendlich weniger schlechte Schritte akzeptiert werden"),
+                   h3("- Dieser Abkühlungsprozess, welcher aus der Thermodynamik inspiriert ist, ist namensgebend für das Simualted Anneling"),
+              )),
               fluidRow(
                 column(
                   12, h1("Workflow Simulated Anneling"),
@@ -91,6 +100,28 @@ ui <- fluidPage("",
           icon = icon("far fa-image"),
           fluidRow(
             column(
+              
+              12,
+              br(),
+              verticalTabsetPanel(
+                verticalTabPanel("Heuristik",
+                                 style = "color:#000;",
+                                 h2("Kernkonzept:"),
+                                 h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
+                                 h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
+                                 h3("- Beispiel dafür Traveling Salesman-Problem")
+                                 
+                ),
+                verticalTabPanel("Heuristik",
+                                style = "color:#000;",
+                                h2("Kernkonzept:"),
+                                h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
+                                h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
+                                h3("- Beispiel dafür Traveling Salesman-Problem")
+                                
+                )
+                ),
+              
               12, h1("Graphische Visualisierung Berggipfel finden"),
               br(),
               img(src = "Gif_Explain.gif")
