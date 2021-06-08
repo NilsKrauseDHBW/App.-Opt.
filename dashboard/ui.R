@@ -104,20 +104,20 @@ ui <- fluidPage("",
               12,
               br(),
               verticalTabsetPanel(
-                verticalTabPanel("Heuristik",
-                                 style = "color:#000;",
-                                 h2("Kernkonzept:"),
-                                 h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
-                                 h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
-                                 h3("- Beispiel dafür Traveling Salesman-Problem")
+                verticalTabPanel("Berggipfel finden",
+                  style = "color:#000;",
+                   h2("Problemstellung:"),
+                   h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
+                   h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
+                   h3("- Beispiel dafür Traveling Salesman-Problem")
                                  
                 ),
-                verticalTabPanel("Heuristik",
-                                style = "color:#000;",
-                                h2("Kernkonzept:"),
-                                h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
-                                h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
-                                h3("- Beispiel dafür Traveling Salesman-Problem")
+                verticalTabPanel("Traveling Salesman Problem",
+                  style = "color:#000;",
+                  h2("Problemstellung:"),
+                  h3("- Reihenfolge für den Besuch mehrere Orte zu bestimmen"),
+                  h3("-	Dabei jeden Ort nur einmal und Startpunkt soll auch Endpunkt "),
+                  h3("-	Die gesamte Reisestrecke soll dabei minimiert werden")
                                 
                 )
                 ),
