@@ -66,19 +66,13 @@ ui <- fluidPage("",
                 verticalTabPanel("Simualted Annealing Durchführung",
                    style = "color:#000;",
                    h2("Durchführung:"),
-                   h3("- Zu Beginn wird mit einer hohen Temperatur gestartet, welche sich iterative verkleinert"),
+                   h3("- Zu B
+                      eginn wird mit einer hohen Temperatur gestartet, welche sich iterative verkleinert"),
                    h3("- Das wiederum verkleinert den WDF Wert"),
                    h3("- Das in Kombination mit der steigenden Nummer an zufälligen schritten führt dies dazu das Anfangs viele schritte akzeptiert werden, welche schlechter sind als die vorherigen"),
                    h3("- wohingegen zum ende hin wesendlich weniger schlechte Schritte akzeptiert werden"),
                    h3("- Dieser Abkühlungsprozess, welcher aus der Thermodynamik inspiriert ist, ist namensgebend für das Simualted Anneling"),
               )),
-              fluidRow(
-                column(
-                  12, h1("Workflow Simulated Anneling"),
-                  br(),
-                  img(src = "AppOpt.png")
-                )
-              ),
               fluidRow(
                 column(
                   12,
@@ -96,44 +90,55 @@ ui <- fluidPage("",
             )
           )
         ),
-        tabPanel("Graphische Visualisierung",
+        tabPanel("Workflow",
           icon = icon("far fa-image"),
           fluidRow(
             column(
-              
-              12,
+              12, h1("Workflow Simulated Anneling"),
               br(),
-              verticalTabsetPanel(
-                verticalTabPanel("Berggipfel finden",
-                  style = "color:#000;",
-                   h2("Problemstellung:"),
-                   h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
-                   h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
-                   h3("- Beispiel dafür Traveling Salesman-Problem")
-                                 
-                ),
-                verticalTabPanel("Traveling Salesman Problem",
-                  style = "color:#000;",
-                  h2("Problemstellung:"),
-                  h3("- Reihenfolge für den Besuch mehrere Orte zu bestimmen"),
-                  h3("-	Dabei jeden Ort nur einmal und Startpunkt soll auch Endpunkt "),
-                  h3("-	Die gesamte Reisestrecke soll dabei minimiert werden")
-                                
-                )
-                ),
-              
-              12, h1("Graphische Visualisierung Berggipfel finden"),
-              br(),
-              img(src = "Gif_Explain.gif")
-            )
-          ),
-          fluidRow(
-            column(
-              12, h1("Graphische Visualisierung Traveling Salesman Problem"),
-              br(),
-              img(src = "trav_sale.gif")
+              img(src = "AppOpt.png")
             )
           )
+        )
+        ,
+        tabPanel("Graphische Visualisierung",
+                 icon = icon("far fa-image"),
+                 fluidRow(
+                   column(
+                     
+                     12,
+                     br(),
+                     verticalTabsetPanel(
+                       verticalTabPanel("Berggipfel finden",
+                                        style = "color:#000;",
+                                        h2("Problemstellung:"),
+                                        h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
+                                        h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
+                                        h3("- Beispiel dafür Traveling Salesman-Problem")
+                                        
+                       ),
+                       verticalTabPanel("Traveling Salesman Problem",
+                                        style = "color:#000;",
+                                        h2("Problemstellung:"),
+                                        h3("- Reihenfolge für den Besuch mehrere Orte zu bestimmen"),
+                                        h3("-	Dabei jeden Ort nur einmal und Startpunkt soll auch Endpunkt "),
+                                        h3("-	Die gesamte Reisestrecke soll dabei minimiert werden")
+                                        
+                       )
+                     ),
+                     
+                     12, h1("Graphische Visualisierung Berggipfel finden"),
+                     br(),
+                     img(src = "Gif_Explain.gif")
+                   )
+                 ),
+                 fluidRow(
+                   column(
+                     12, h1("Graphische Visualisierung Traveling Salesman Problem"),
+                     br(),
+                     img(src = "trav_sale.gif")
+                   )
+                 )
         )
       )
     ),
