@@ -33,7 +33,7 @@ ui <- fluidPage("",
                 verticalTabPanel("Simualted Annealing und Kernkonzept/Parameter",
                   style = "color:#000;",
                   h2("Kernkonzept:"),
-                  h3("- Heuristisches Verfahren, bei dem das Finden eines ungefähres Optimum in einer festen Zeitspanne steht im Vordergrund "),
+                  h3("- Heuristisches Verfahren, bei dem das Finden eines ungefähres Optimum in einer festen Zeitspanne im Vordergrund steht"),
                   h2("---"),
                   h2("Parameter:"),
                   h3("- Temperatur"),
@@ -46,18 +46,21 @@ ui <- fluidPage("",
                    h2("Temperatur:"),
                    h3("- zum Start Initalisierung einer hohen Temperatur"),
                    h3("- Temperatur wird über die Laufzeit inkrementell reduziert"),
-                   h3("- je höher Temperatur, desto länger die Laufzeit des Verfahrens")
+                   h3("- je höher Temperatur, desto länger die Laufzeit des Verfahrens"),
+                   img(src = "Thermometer.png", height = "150", weight = "500")
                 )
                 ,
                 verticalTabPanel("Simualted Annealing Parameter WDF Wert/Anzahl absolvierter Schritte",
                    style = "color:#000;",
                    h2("WDF Wert:"),
-                   h3("- errechnet sich aus der Temperatur und der WDF Formel"),
+                   h3("- errechnet sich aus der Temperatur, Kostenfunktion und der WDF Formel"),
+                   h3("- dabei werden die Werte in die Wahrscheinlichkeitsdichteverteilung eingesetzt und das Ergebnis ist dann der WDF Wert"),
+                   img(src = "Formel.png", height = "80"),
+                   h3("- wie man sieht sinkt mit steigender Temperatur der Wert der der Wahrscheinlichkeitsdichteverteilung übergeben wird"),
                    h2("---"),
                    h2("Absolvierte Schritte:"),
                    h3("- zum Start Initalisierung mit 0"),
                    h3("- pro Iteration Wert um +1 erhöht"),
-                   h3("- Erlaubt zwischenzeitlich schlechtere Lösungen -> kommt aus lokalem Optimum wieder heraus")
                 )
               ),
               fluidRow(
@@ -77,7 +80,7 @@ ui <- fluidPage("",
                      h2("Die Wahrscheinlichkeit schlechte Schritte durchzuführen:"),
                      h3("- Die Wahrscheinlichkeit schlechte Schritte durchzuführen sinkt stetig gegen Null, wenn die Temperatur reduziert wird. In den Anfangsstadien akzeptiert das Verfahren häufiger schlechtere Schritte, während in den Endstadien die schlechteren Schritte fast immer ablehnt werden."),
                      h3("- Das hat den Vorteil, dass Anfangs durch die schlechten Schritte sich das Verfahren nicht in einem lokalen Optimum verfängt und ein besseres lokales Optimum findet."),
-                    )
+                     )
                   )
                 )
               )
