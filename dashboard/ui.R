@@ -78,7 +78,7 @@ ui <- fluidPage("",
                    h2("Herleitung aus der Natur:"),
                    img(src = "Abkuelung_falsch.gif"),
                    h2("Nein nicht diese Abkühlung! ;)"),
-                   h2("Sondern derAbkülungsprozess Thermodyamik"),
+                   h2("Sondern der Abkülungsprozess der Thermodyamik"),
                    img(src = "Abkuelung.gif", height = "400"),
                    h3("- je höher die Temperatur, desto höher ist die Teilchenbewegung"),
                    h3("- während des Abkühlens ordnen sich die Teilchen in einer energetisch günstigen Struktur an"),
@@ -117,9 +117,10 @@ ui <- fluidPage("",
                        verticalTabPanel("Berggipfel finden",
                                         style = "color:#000;",
                                         h2("Problemstellung:"),
-                                        h3("- Auffindung einer hinreichend guten Lösung, unter Abschätzung eines Zeitaufwandes"),
-                                        h3("- Einsatz, wenn Optimierung wegen hohem Rechenaufwand scheitert"),
-                                        h3("- Beispiel dafür Traveling Salesman-Problem")
+                                        h3("- suche nach dem höchsten Gipfel im Gebirge"),
+                                        h3(""),
+                                        h3("")
+                                        
                                         
                        ),
                        verticalTabPanel("Traveling Salesman Problem",
