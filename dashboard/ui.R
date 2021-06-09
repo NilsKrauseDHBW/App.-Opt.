@@ -76,13 +76,11 @@ ui <- fluidPage("",
               verticalTabPanel("Simualted Annealing Herleitung aus der Natur",
                    style = "color:#000;",
                    h2("Herleitung aus der Natur:"),
-                   img(src = "Abkuelung_falsch.gif"),
-                   h2("Nein nicht diese Abkühlung! ;)"),
-                   h2("Sondern der Abkülungsprozess der Thermodyamik"),
-                   img(src = "Abkuelung.gif", height = "400"),
                    h3("- je höher die Temperatur, desto höher ist die Teilchenbewegung"),
                    h3("- während des Abkühlens ordnen sich die Teilchen in einer energetisch günstigen Struktur an"),
                    h3("- Dieser Abkühlungsprozess, welcher aus der Thermodynamik inspiriert ist, ist namensgebend für das Simualted Anneling"),
+                   h3("- Beim Akühlungsprozess werden auch schlechtere Energiezustände in Kauf genommen"), 
+                   img(src = "Abkuelung.gif", height = "400")
                    )
               ,
               verticalTabPanel("Wahrscheinlichkeit schlechte Schritte durchzuführen",
@@ -133,7 +131,7 @@ ui <- fluidPage("",
                        )
                      ),
                      
-                     12, h1("Graphische Visualisierung Berggipfel finden"),
+                     h1("Graphische Visualisierung Berggipfel finden"),
                      br(),
                      img(src = "Gif_Explain.gif")
                    )
